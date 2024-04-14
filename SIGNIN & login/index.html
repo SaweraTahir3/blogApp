@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign up page</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+</head>
+
+<body>
+  <div>
+    <nav>
+      <h1>Personal Bloging App</h1>
+      <h1 class="login" style="color: white;" onclick="next()"> <a href="./login.html">login</h1></a>
+    </nav>
+  </div>
+  <div id="container">  
+     <h1 class="heading1"> sign In user</h1>
+
+ <div class="FORM">
+  <form id="myForm" onsubmit="">
+    <!-- <h2 class="parh"> Book Your Place Now</h2> -->
+    <!-- <p class="par">Where You Want To Go </P> -->
+
+      <p class="par">
+      <input required type="name" id="name" placeholder="name" class="inputs"></p>
+ <br>
+      <p class="par">
+      <input required type="lastname"  id="lastname" placeholder="Lastname" class="inputs" ></p>
+<br>
+      <p class="par">
+      <input required type="Email" id="email" placeholder="Email" class="inputs"></p>
+<br>
+<p class="par">
+  <input required type="password" id="password" placeholder="password" class="inputs"></p>
+  <br>
+  <p class="par">
+    <input required type="password" id="RepeatPassword" placeholder="RepeatPassword" class="inputs"></p>
+    <br><br
+    >
+      <p class="par"><button type="submit"   id="btn1" class="btn1" onclick="send()"> Submit</button></p>
+
+      </button>
+  </form>
+  </div>
+ <script>
+
+
+
+
+  
+    // document.getElementsByClassName(".btn1").onclick = function(){
+    //     window.location.href = "./login.html";
+       
+  
+ </script>
+  
+
+
+
+                  
+ 
+
+
+  <script src="./app.js"></script>
+</body>
+</html>

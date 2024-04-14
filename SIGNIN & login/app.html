@@ -1,0 +1,51 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   </head>
+   <body>
+    
+   
+
+
+
+<div class="cntt">
+
+    <p class="TexT formdesign"  id="name">Name</p>
+    <input required class="lion" type="text" placeholder="Enter your name">
+    <p class="TexT formdesign" id="email">Email</p>
+    <input class="lion" type="email" placeholder="Enter your Email">
+    <p class="TexT formdesign" id="phone">Phone</p>
+    <input class="lion" type="number" placeholder="Enter your phone number">
+    <p class="TexT formdesign" id="message">Message</p>
+    <textarea cols="40" rows="8" placeholder="Your message"></textarea>
+    <p class="TexT formdesign" id="submitt"> <button type="submit" onclick="openPopop()">Submit</button> </p>
+
+</div>
+</div>
+</div>
+
+<div class="fsub">
+<div class="popop" id="popop">
+<i class="fa-solid fa-check"></i>
+<h2>Thank You!</h2>
+<p>Your Details have been submitted. Thanks!</p>
+<button type="button" onclick="closePopop()">OK</button>
+</div>
+</div>
+
+<script>
+let popup = document.getElementById("popop");
+function openPopop() {
+popup.classList.add("open-popop");
+}
+function closePopop() {
+popup.classList.remove("open-popop");
+}
+</script>
+</body>
+</html>
+
+
